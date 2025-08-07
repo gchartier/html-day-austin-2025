@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%; min-height: 100%">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <title>HTML Day 2025 ✳️ Austin, TX</title>
@@ -8,43 +8,78 @@
             href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳️</text></svg>"
         />
         <style>
+            html {
+                height: 100%;
+                min-height: 100%;
+            }
+
+            .aside-disclaimer {
+                border-bottom: 4px solid black;
+                background-color: #70f206;
+                padding: 0.5rem;
+                color: black;
+                margin: 0;
+                width: 100%;
+                text-align: center;
+
+                p {
+                    margin: 0;
+                }
+            }
+
             body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 1rem;
+                margin: 0;
+                padding: 0 8px 8px 8px;
             }
 
             header {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-            }
 
-            .header-content {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
+                .header-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
 
-            .title-container {
-                display: flex;
-                gap: 0.2rem;
-                padding: 1rem 0;
-            }
+                .title-container {
+                    display: flex;
+                    gap: 0.2rem;
+                    padding: 1rem 0;
+                }
 
-            .main-title {
-                font-size: 3rem;
-                margin: 0 0 0 1rem;
-                line-height: 1.2;
-            }
+                .main-title {
+                    font-size: 3rem;
+                    margin: 0 0 0 1rem;
+                    line-height: 1.2;
+                }
 
-            .hero-image {
-                width: 18rem;
-                height: auto;
-                display: block;
-                border: 1rem ridge rgb(211 220 50 / 0.6);
-                margin: 2rem 0;
+                .hero-image {
+                    width: 18rem;
+                    height: auto;
+                    display: block;
+                    border: 1rem ridge rgb(211 220 50 / 0.6);
+                    margin: 2rem 0;
+                }
+
+                .title-html-gif {
+                    margin-bottom: -1rem;
+                    margin-right: 0.5rem;
+                    width: 5rem;
+                    height: 3.5rem;
+                }
+
+                .title-texas-gif {
+                    margin-left: 1rem;
+                    margin-top: -0.2rem;
+                    width: 5rem;
+                    height: 4rem;
+                }
             }
 
             .rsvp-widget {
@@ -59,21 +94,21 @@
                 background: white;
                 padding: 1rem;
                 z-index: 1000;
-            }
 
-            .rsvp-title {
-                margin: 0;
-                padding: 0.2rem;
-                margin-top: 0.2rem;
-                font-weight: bold;
-                color: #70f206;
-                background-color: black;
-                font-size: 1.5rem;
-            }
+                .rsvp-title {
+                    margin: 0;
+                    padding: 0.2rem;
+                    margin-top: 0.2rem;
+                    font-weight: bold;
+                    color: #70f206;
+                    background-color: black;
+                    font-size: 1.5rem;
+                }
 
-            .rsvp-button {
-                width: 100%;
-                height: auto;
+                .rsvp-button {
+                    width: 100%;
+                    height: auto;
+                }
             }
 
             main {
@@ -93,11 +128,15 @@
                 position: relative;
                 font-size: 1.2rem;
                 width: 100%;
-            }
 
-            details p,
-            details div {
-                padding: 0 0.5rem;
+                p,
+                div {
+                    padding: 0 0.5rem;
+                }
+
+                .details-what-is-this {
+                    position: relative;
+                }
             }
 
             summary {
@@ -106,51 +145,37 @@
                 padding: 0;
                 width: 100%;
                 cursor: cell;
-            }
 
-            summary div {
-                display: inline-flex;
-                align-items: center;
-                gap: 0.5rem;
-                padding: 0;
-                margin: 0;
-                width: calc(100% - 20px);
-            }
+                div {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    padding: 0;
+                    margin: 0;
+                    width: calc(100% - 20px);
 
-            summary div p {
-                width: max-content;
-                white-space: nowrap;
-                background-color: #70f206;
-                margin: 0;
-                padding: 0;
-            }
+                    p {
+                        width: max-content;
+                        white-space: nowrap;
+                        background-color: #70f206;
+                        margin: 0;
+                        padding: 0;
+                    }
 
-            summary div img {
-                flex: 1;
-                max-width: 100%;
-                height: auto;
-                object-fit: cover;
-                background-color: white;
+                    img {
+                        flex: 1;
+                        max-width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                        background-color: white;
+                    }
+                }
             }
 
             summary:hover,
             details[open] summary {
                 background-color: black;
                 color: #70e106;
-            }
-
-            .title-html-gif {
-                margin-bottom: -1rem;
-                margin-right: 0.5rem;
-                width: 5rem;
-                height: 3.5rem;
-            }
-
-            .title-texas-gif {
-                margin-left: 1rem;
-                margin-top: -0.2rem;
-                width: 5rem;
-                height: 4rem;
             }
 
             .dance-gif {
@@ -178,15 +203,15 @@
                 grid-column-gap: 3rem;
                 grid-row-gap: 0px;
                 margin-top: 1rem;
-            }
 
-            .expectations-grid img {
-                height: 3rem;
-                width: auto;
-            }
+                img {
+                    height: 3rem;
+                    width: auto;
+                }
 
-            .expectations-grid img:last-child {
-                height: 5rem;
+                img:last-child {
+                    height: 5rem;
+                }
             }
 
             .schedule-table {
@@ -196,49 +221,49 @@
                 border-collapse: collapse;
                 border-top: 1px solid #999;
                 border-bottom: 1px solid #999;
-            }
 
-            .schedule-caption {
-                padding: 1em;
-                padding-left: 0.2rem;
-                font-style: italic;
-                font-weight: bold;
-                font-size: 1.2rem;
-                caption-side: top;
-                letter-spacing: 1px;
-                text-align: left;
-            }
+                .schedule-caption {
+                    padding: 1em;
+                    padding-left: 0.2rem;
+                    font-style: italic;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    caption-side: top;
+                    letter-spacing: 1px;
+                    text-align: left;
+                }
 
-            tbody tr:nth-child(odd) {
-                background-color: #eee;
-            }
+                tbody tr:nth-child(odd) {
+                    background-color: #eee;
+                }
 
-            th,
-            td {
-                vertical-align: top;
-                padding: 0.3em;
-            }
+                th,
+                td {
+                    vertical-align: top;
+                    padding: 0.3em;
+                }
 
-            tr :nth-child(2) {
-                text-align: left;
-                width: 75%;
-            }
+                tr :nth-child(2) {
+                    text-align: left;
+                    width: 75%;
+                }
 
-            tr :nth-child(1) {
-                text-align: left;
-                width: 25%;
-            }
+                tr :nth-child(1) {
+                    text-align: left;
+                    width: 25%;
+                }
 
-            tfoot {
-                border-top: 1px solid #999;
-            }
+                tfoot {
+                    border-top: 1px solid #999;
+                }
 
-            tfoot tr :nth-child(1) {
-                text-align: right;
-            }
+                tfoot tr :nth-child(1) {
+                    text-align: right;
+                }
 
-            tfoot tr :nth-child(2) {
-                text-align: left;
+                tfoot tr :nth-child(2) {
+                    text-align: left;
+                }
             }
 
             footer {
@@ -249,14 +274,21 @@
                 margin: 0 0 2rem 0;
                 gap: 0.5rem;
                 font-size: 1.1rem;
-            }
 
-            footer p {
-                margin: 0;
+                p {
+                    margin: 0;
+                }
             }
         </style>
     </head>
     <body>
+        <aside class="aside-disclaimer">
+            <p>
+                This page was made for HTML Day Austin 2025, a local event inspired by
+                <a href="https://html.energy" target="_blank">HTML Energy</a>. Originally hosted on
+                <a href="https://htmlaustin.com" target="_blank">htmlaustin.com</a>.
+            </p>
+        </aside>
         <header>
             <div class="header-content">
                 <div class="title-container">
@@ -297,10 +329,10 @@
         </div>
 
         <main>
-            <details open>
+            <details class="details-what-is-this" open>
                 <summary>What is this?</summary>
 
-                <p style="position: relative">
+                <p>
                     <a href="https://html.energy/html-day/2025/index.html" target="_blank"
                         >HTML Day</a
                     >
@@ -499,9 +531,12 @@
                     />
                 </p>
                 <p>
-                    Photos and any websites made during the event will be posted on
-                    <a href="https://www.are.na/html-energy/html-day" target="_blank">Arena</a>
-                    (if you want!).
+                    Photos taken during the event can be found on
+                    <a
+                        href="https://www.are.na/html-energy/html-day-2025-photo-album"
+                        target="_blank"
+                        >Arena</a
+                    >.
                 </p>
             </details>
             <details>
